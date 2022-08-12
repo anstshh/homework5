@@ -94,11 +94,13 @@ public class Main {
 
         int[] array10 = {1, 2, 3};
         for (int i = 0; i <3; i++) {
-            if (array10[i] % 2 !=0);
-            array10[i] = array[i] +1;
+            if (array10[i] % 2 !=0){
+                array10[i] = array[i] +1;
+            }
         }
         {
-            System.out.print(array10[0] + "," + array10[1] + "," + array10[2]); //нечетные то стали четными, но четное стало нечетным. Нужно ли тут второе условие запускать, чтобы четное число не менялось?
+            System.out.print(array10[0] + "," + array10[1] + "," + array10[2]);
+        }
         }
         
 
@@ -106,7 +108,7 @@ public class Main {
 
 
     }
-}
+
 
 
 
