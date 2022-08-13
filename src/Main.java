@@ -6,108 +6,79 @@ public class Main {
         array[1] = 2;
         array[2] = 3;
         double[] array2 = {1.57, 7.654, 9.986};
-        array2[0] = 1.57;
-        array2[1] = 7.654;
-        array2[2] = 9.986;
         long[] array3 = new long[2];
         array3[0] = 1;
         array3[1] = 2;
 
         //Задача 2
 
-        int[] array4 = {1, 2, 3};
-        for (int i = 1; i <= 3; i++)
-            array4[0] = 1;
-        {
-            System.out.print(array4[0] + "," + array4[1] + "," + array[2]); //есть способ написать корое?
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i != array.length - 1) {
+                System.out.print(", ");
+            }
         }
-        {
-            System.out.println(); //я тут это поставила, чтобы разделить строки, хотя возможно это какая то фигня
-        }
-        double[] array5 = {1.57, 7.654, 9.986};
+        System.out.println();
 
-        for (double a = 1.57; a < 9.986; a++) {
-            array5[0] = 1.57;
+        for (int i = 0; i < array2.length; i++) {
+            System.out.print(array2[i]);
+            if (i != array2.length - 1) {
+                System.out.print(", ");
+            }
         }
-        {
-            System.out.print(array5[0] + "," + array5[1] + "," + array5[2]);
-        }
-        {
-            System.out.println(); // меня дико бесят скобочки, я вообще не понимаю где их ставить, ставлю интуитивно
+        System.out.println();
+
+        for (int i = 0; i < array3.length; i++) {
+            System.out.print(array3[i]);
+            if (i != array3.length - 1) {
+                System.out.print(", ");
+            }
         }
 
-        long[] array6 = new long[2];
-        array6[0] = 1;
-        array6[1] = 2;
-        for (int i = 0; i < 2; i++) {
-
-        }
-        {
-            System.out.print(array6[0] + "," + array6[1]);
-        }
         // Задача 3
 
-        {
+        System.out.println();
+
+        for (int i = array.length - 1; i >= 0; i--) {
+            System.out.print(i);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+
             System.out.println();
-        }
 
-        {
-            int[] array7 = {1, 2, 3};
-            for (int i = 3; i >= 1; i--)
-                array7[0] = 1;
-            {
-                System.out.print(array7[2] + "," + array7[1] + "," + array7[0]);
+            for (int a = array2.length - 1; a >= 0; a--) {
+                System.out.print(array2[a]);
+                if (a != 0) {
+                    System.out.print(", ");
+                }
             }
-            {
-                System.out.println();
-            }
-            double[] array8 = {1.57, 7.654, 9.986};
-
-            for (double a = 9.986; a > 1.57; a--) {
-                array8[0] = 1.57;
-            }
-            {
-                System.out.print(array8[2] + "," + array8[1] + "," + array8[0]);
-            }
-            {
-                System.out.println();
-            }
-
-            long[] array9 = new long[2];
-            array9[0] = 1;
-            array9[1] = 2;
-            for (long i = 0; i > 1; i--) {
-
-            }
-            {
-                System.out.print(array9[1] + "," + array9[0]); // хотя вот тут и без for работает
-            }
-
-
-        }
-
-        {
             System.out.println();
+
+            for (int b = array3.length - 1; b >= 0; b--) {
+                System.out.print(array3[b]);
+                if (b != 0) {
+                    System.out.print(", ");
+                }
+
+            }
         }
+        System.out.println();
 
         // Задача 4
 
-        int[] array10 = {1, 2, 3};
-        for (int i = 0; i <3; i++) {
-            if (array10[i] % 2 !=0){
-                array10[i] = array[i] +1;
+        int[] array4 = {1, 2, 3};
+        for (int i = 0; i < array4.length; i++) {
+            if (array4[i] % 2 == 1) {
+                array4[i]++;
+            }
+            System.out.println(array4[i]);
+            if (i != array4.length - 1) {
+                System.out.println(", ");
             }
         }
-        {
-            System.out.print(array10[0] + "," + array10[1] + "," + array10[2]);
-        }
-        }
-        
-
-
-
-
     }
+}
 
 
 
